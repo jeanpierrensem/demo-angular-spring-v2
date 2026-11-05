@@ -49,7 +49,7 @@ public class BackendSpringStudentsApplication {
 
                         for (int i = 0; i < 10 ; i++) {
                               paymentRepository.save(Payment.builder()
-                                    .id( UUID.randomUUID().toString())
+                                    .id(UUID.randomUUID().toString())
                                     .date(LocalDateTime.now())
                                     .student(student)
                                     .type(Math.random() > 0.5 ? PaymentType.TRANSFER : PaymentType.CASH)

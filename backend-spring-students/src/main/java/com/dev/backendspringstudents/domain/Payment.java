@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder @ToString @EqualsAndHashCode
 public class Payment {
-   @Id
+    @Id
     private String id;
     private LocalDateTime date;
     private double amount;
