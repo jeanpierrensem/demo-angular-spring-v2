@@ -7,7 +7,6 @@ import com.dev.backendspringstudents.domain.Student;
 import com.dev.backendspringstudents.repositories.PaymentRepository;
 import com.dev.backendspringstudents.repositories.StudentRepository;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -15,8 +14,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -25,6 +22,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController("/api")
+@CrossOrigin("*")
 public class StudentRestController {
 
     StudentRepository  studentRepository;
